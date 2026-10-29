@@ -33,7 +33,7 @@ Calculate the band from the number of calendar days since 2026-10-30 modulo seve
 
 ## Auto-publishing sequence
 1. Check the repo latest state and archive to avoid duplicate article for the same date/budget. A date already published must not be overwritten. If no recommendation clears the quality bar, stop without site changes.
-2. Research and write a short static HTML article at `phone-guides/YYYY-MM-DD-<short-seo-slug>.html`. It must be mobile responsive and use the existing minimal graphite/ivory/champagne design, BRANDSTUDIO name, clear H1, date published/price checked, budget, one recommendation, price/range only if verified, concise rationale, one limitation, source links, canonical/description/open-graph tags, Article JSON-LD with datePublished/dateModified (same publication date), and a WhatsApp CTA to `https://wa.me/919921894495`. Do not copy product photos or official review text; no image is required.
+2. Research and write a short static HTML article at `phone-guides/YYYY-MM-DD-<short-seo-slug>.html`. It must be mobile responsive and use the existing minimal olive-green and white design, BRANDSTUDIO name, clear H1, date published/price checked, budget, one recommendation, price/range only if verified, concise rationale, one limitation, source links, canonical/description/open-graph tags, Article JSON-LD with datePublished/dateModified (same publication date), and a WhatsApp CTA to `https://wa.me/919921894495`. Do not copy product photos or official review text; no image is required.
 3. Create the new article using the GitHub contents connector (create a NEW file; never replace an existing article).
 4. Fetch `phone-guides/index.html`, preserve all existing content and replace the contents only between `<!-- AUTO-POST-INDEX:START -->` and `<!-- AUTO-POST-INDEX:END -->` with the newest-first list of cards, each linking to the correct article and displaying publication date, budget and a short accurate summary. Never remove previously published posts from the archive.
 5. Fetch `sitemap.xml`; add the article's absolute canonical URL as a new `<url>` entry with current `lastmod`. Keep every existing URL and do not duplicate entries.
@@ -46,3 +46,9 @@ The homepage has a Phone guides navigation link and a phone-guides teaser. Do no
 
 ## Required daily report
 Return just a compact status: PUBLISHED (with article URL + one-pick summary + verified price + sources) or NO PUBLISH TODAY (reason), or BLOCKED (exact repository/deployment blocker). Never silently imply a successful live post.
+
+
+## Stable visual release v1.1.0
+- Palette: deep olive `#3F4A32`, white `#FFFFFF`, soft off-white `#F8FAF6`, olive accent `#7F8F62`, muted text `#626B5B`.
+- Footer year is generated from the browser date on the homepage and guide archive.
+- Production verification must include desktop/mobile viewport, homepage navigation, guide archive, WhatsApp URL and not-found page.
