@@ -3,3 +3,5 @@ Allow: /
 
 User-agent: OAI-SearchBot
 Allow: /
+
+Sitemap: https://brandstudio-pi.vercel.app/sitemap.xml
